@@ -1,5 +1,4 @@
 # Setup you macbook for DS
----
 
 This guide covers the basics of setting up a Data Science development environment on a new Mac (python only) that I personally prefer. Installation of specific python libraries is not covered.
 
