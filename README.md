@@ -1,5 +1,5 @@
 # Setup you macbook for DS
---
+---
 
 This guide covers the basics of setting up a Data Science development environment on a new Mac (python only) that I personally prefer. Installation of specific python libraries is not covered.
 
@@ -197,5 +197,5 @@ Then you can choose it while creating now notebook:
 
 ![pic](pics/jupyter-environments.png)
 
---
+---
 P.S. Huge credit for the creation of this instruction goes to my former colleague and just a cool DS guy Alvaro Rabadan.
