@@ -4,10 +4,11 @@
 Setting up your macbook for DS development.
 
 #### Run all
-To run all in one shot you can try to downloan file `macbook-setup.sh` and run:
+To run all in one shot you can try to run:
+
 
 ```bash
-# cd <path/to/file>
+curl -L https://get.oh-my.fish
 sh macbook-setup.sh
 ```
 
@@ -46,8 +47,18 @@ brew doctor
 Once it's installed let's download bunch of useful apps:
 
 ```bash
-brew cask install sublime-text sourcetree slack pycharm-ce remote-desktop-manager keka macdown
+brew cask install sublime-text sourcetree slack pycharm-ce remote-desktop-manager keka macdown jupyter-notebook-viewer docker
 ```
+
+- `sublime-text` - powerful text editor
+- `sourcetree` - GUI for git 
+- `slack` - messenger for teams 
+- `pycharm-ce` - the most powerful python IDE
+- `remote-desktop-manager` - for RDP connections
+- `keka` - the macOS file archiver
+- `macdown` - nice editor for markdown (ReadMe.md files)
+- `jupyter-notebook-viewer` - super nice small app to view notebooks without running jupyter
+- `docker` - OS-level virtualization to deliver software in packages.
 
 #### Replacing the terminal
 iTerm2 is a really nice replacement with really nice features, like mouse support, split pane views, hotkeys, paste history.
@@ -84,13 +95,6 @@ Get a bunch of useful plugins
 
 ```bash
 omf install sublime osx bobthefish pyenv
-```
-
-Fix PyEnv (update is needed, didn't work last time)
-
-```bash
-pyenv rehash
-mkdir ~/.pyenv/bin
 ```
 
 If you notice there are some weirds icons in the terminals and this is because by default some of the fonts are missing. In order to fix it: 
@@ -172,3 +176,6 @@ ipython kernel install --user --name=projectname
 Then you can choose it while creating now notebook:
 
 ![pic](pics/jupyter-environments.png)
+
+---
+P.S. Huge credit for creation of this instruction goes to my former colleague and just a cool DS guy Alvaro Rabadan 

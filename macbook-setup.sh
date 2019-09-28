@@ -8,7 +8,7 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 brew install cask
  
 # Dev Tools
-brew cask install sublime-text sourcetree slack pycharm-ce remote-desktop-manager keka macdown
+brew cask install sublime-text sourcetree slack pycharm-ce remote-desktop-manager keka macdown jupyter-notebook-viewer docker
 
 # replacing the terminal
 brew cask install iterm2
