@@ -1,3 +1,5 @@
+#!/usr/bin/env sh
+
 # get Xcode Command Line Tools
 xcode-select --install
 

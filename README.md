@@ -1,15 +1,17 @@
-# macbook-ds-setup
----
+# Setup you macbook for DS
+--
 
-Setting up your macbook for DS development.
+This guide covers the basics of setting up a Data Science development environment on a new Mac (python only) that I personally prefer. Installation of specific python libraries is not covered.
+
 
 #### Run all
 To run all in one shot you can try to run:
 
-
 ```bash
-curl -L https://get.oh-my.fish
-sh macbook-setup.sh
+curl -L https://raw.githubusercontent.com/nk239/macbook-ds-setup/master/macbook-setup.sh | bash
+
+# or 
+sh -e "$(https://raw.githubusercontent.com/nk239/macbook-ds-setup/master/macbook-setup.sh)"
 ```
 
 #### Get Xcode Command Line Tools
@@ -47,7 +49,16 @@ brew doctor
 Once it's installed let's download bunch of useful apps:
 
 ```bash
-brew cask install sublime-text sourcetree slack pycharm-ce remote-desktop-manager keka macdown jupyter-notebook-viewer docker
+brew cask install \
+	sublime-text \
+	sourcetree \
+	slack \
+	pycharm-ce \
+	remote-desktop-manager \
+	keka \
+	macdown \
+	jupyter-notebook-viewer \
+	docker
 ```
 
 - `sublime-text` - powerful text editor
@@ -115,10 +126,19 @@ And then just go to Iterm2 > Preferences > Profiles > Text 
 and ensure "Use a different font for non-ASCII text" is ticked with 'Hack Regular' font.
 
 ![pic](pics/iterm-preferences.png)
-￼
+
+Additional features for fish:
+
+```bash
+brew install tree
+```
+
+￼- `tree` produces nice ASCII directory tree: [see here](http://sourabhbajaj.com/mac-setup/iTerm/tree.html) - super nice for Readme file creation.
+
+
 #### Get python 
 
-Python 2.7 comes by default in macOS, but we don't want to end up messing the default system's interpreter. We strongly recommend install Python3 and [PyEnv](https://github.com/pyenv/pyenv), so we can install and remover libraries as our peace without interfering with the operative system. There is a really nice python platform ready for science called [Anaconda](https://www.anaconda.com/distribution/), it's really well supported and by default is useable, removing all the tedious work of setting up and installing tons of libraries. To install  Anaconda:
+Python 2.7 comes by default in macOS, but we don't want to end up messing the default system's interpreter. We strongly recommend install Python3 and [PyEnv](https://github.com/pyenv/pyenv), so we can install and remove libraries without interfering with the operative system. There is a really nice python platform ready for science called [Anaconda](https://www.anaconda.com/distribution/), it's really well supported and by default is useable, removing all the tedious work of setting up and installing tons of libraries. To install  Anaconda:
 
 Install PyEnv:
 
@@ -152,7 +172,7 @@ sudo easy_install pip
 ```
 
 #### Python 3 
-Additional turtorial is available by [link](https://wsvincent.com/install-python3-mac/).
+Additional tutorial is available by [link](https://wsvincent.com/install-python3-mac/).
 
 ```bash
 brew install python3
@@ -177,5 +197,5 @@ Then you can choose it while creating now notebook:
 
 ![pic](pics/jupyter-environments.png)
 
----
-P.S. Huge credit for creation of this instruction goes to my former colleague and just a cool DS guy Alvaro Rabadan 
+--
+P.S. Huge credit for the creation of this instruction goes to my former colleague and just a cool DS guy Alvaro Rabadan.
