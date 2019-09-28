@@ -110,11 +110,11 @@ brew cask install font-hack
 And then just go to Iterm2 > Preferences > Profiles > Text 
 and ensure "Use a different font for non-ASCII text" is ticked with 'Hack Regular' font.
 
-![iTerm_Preferences](pics/Preferences.png)
+![pic](pics/iterm-preferences.png)
 ￼
 #### Get python 
 
-Python 2.7 comes by default in macOS, but we don't want to end up messing the default system's interpreter. We strongly recommend install Python3 and PyEnv, so we can install and remover libraries as our peace without interfering with the operative system. There is a really nice python platform ready for science called Anaconda, it's really well supported and by default is useable, removing all the tedious work of setting up and installing tons of libraries. To install  Anaconda:
+Python 2.7 comes by default in macOS, but we don't want to end up messing the default system's interpreter. We strongly recommend install Python3 and [PyEnv](https://github.com/pyenv/pyenv), so we can install and remover libraries as our peace without interfering with the operative system. There is a really nice python platform ready for science called [Anaconda](https://www.anaconda.com/distribution/), it's really well supported and by default is useable, removing all the tedious work of setting up and installing tons of libraries. To install  Anaconda:
 
 Install PyEnv:
 
@@ -125,15 +125,15 @@ brew install pyenv
 And Get Anaconda from PyEnv:
 
 ```bash
-pyenv install anaconda3-5.3.1
+pyenv install anaconda3-2019.03
 ```
 
 SetUp anaconda as default version:
 
 ```bash
-pyenv global anaconda3-4.3.1
+pyenv global anaconda3-2019.03
 ```
-Now close the current terminal window and open a new one
+Now close the current terminal window and open a new one.
 
 Get virtualenv through pip
 
@@ -147,8 +147,8 @@ If you get `-bash: pip: command not found` install pip first
 sudo easy_install pip
 ```
 
-Python 3 and virtual environment
-https://wsvincent.com/install-python3-mac/
+#### Python 3 
+Additional turtorial is available by [link](https://wsvincent.com/install-python3-mac/).
 
 ```bash
 brew install python3
@@ -168,3 +168,7 @@ Now, from inside the environment install ipykernel using pip (to use Jupyter):
 pip install ipykernel
 ipython kernel install --user --name=projectname
 ```
+
+Then you can choose it while creating now notebook:
+
+![pic](pics/jupyter-environments.png)
