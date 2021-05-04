@@ -126,6 +126,13 @@ and ensure "Use a different font for non-ASCII text" is ticked with 'Hack Regu
 
 ![pic](pics/iterm-preferences.png)
 
+Then go to `cd ~/.config/fish` and add this line to the file `config.fish`:
+
+```bash
+set -g theme_nerd_fonts yes
+```
+
+
 More about there theme for iterm2: [bobthefish on github](https://github.com/oh-my-fish/theme-bobthefish).
 
 Additional features for fish:
