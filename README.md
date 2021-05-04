@@ -126,6 +126,8 @@ and ensure "Use a different font for non-ASCII text" is ticked with 'Hack Regu
 
 ![pic](pics/iterm-preferences.png)
 
+More about there theme for iterm2: [bobthefish on github](https://github.com/oh-my-fish/theme-bobthefish).
+
 Additional features for fish:
 
 ```bash
