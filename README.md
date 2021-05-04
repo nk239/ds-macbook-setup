@@ -48,7 +48,7 @@ brew doctor
 Once it's installed let's download bunch of useful apps:
 
 ```bash
-brew cask install \
+brew install --cask \
 	sublime-text \
 	sourcetree \
 	slack \
@@ -74,7 +74,7 @@ brew cask install \
 iTerm2 is a really nice replacement with really nice features, like mouse support, split pane views, hotkeys, paste history.
 
 ```bash
-brew cask install iterm2
+brew install --cask iterm2
 ```
 
 Use brew to Install Fish:
@@ -112,13 +112,13 @@ If you notice there are some weirds icons in the terminals and this is because b
 Load the Fonts repository:
 
 ```bash
-brew tap caskroom/fonts   
+brew tap homebrew/cask-fonts 
 ```
  
 Install Hack font:
 
 ```bash
-brew cask install font-hack
+brew install homebrew/cask-fonts/font-hack
 ```
 
 And then just go to Iterm2 > Preferences > Profiles > Text 
