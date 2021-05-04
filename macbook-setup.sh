@@ -10,10 +10,10 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 brew install cask
  
 # Dev Tools
-brew cask install sublime-text sourcetree slack pycharm-ce remote-desktop-manager keka macdown jupyter-notebook-viewer docker
+brew install --cask sublime-text sourcetree slack pycharm-ce remote-desktop-manager keka macdown jupyter-notebook-viewer docker
 
 # replacing the terminal
-brew cask install iterm2
+brew install --cask iterm2
 
 # install Fish
 brew install fish
@@ -32,10 +32,10 @@ omf install sublime osx bobthefish pyenv
 
 # If you notice there are some weirds icons in the terminals and this is because by default some of the fonts are missing. In order to fix it : 
 # Load the Fonts repository
-brew tap caskroom/fonts
+brew tap homebrew/cask-fonts 
  
 # Install Hack font
-brew cask install font-hack
+brew install homebrew/cask-fonts/font-hack
 
 # And then just go to Iterm2 Preferences ( CMD+ , ) > Profiles > Text and ensure Use a different font for non-ASCII text  is ticked with 'Hack Regular' font 
 
